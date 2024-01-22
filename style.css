@@ -37,6 +37,7 @@ body {
 }
 
 #advice-content {
+    text-align: center;
     font-size: 28px;
 }
 
@@ -44,7 +45,7 @@ body {
     width: 100%;
 }
 
-#dice {
+#generate-button {
     position: absolute;
     bottom: -25px;
     left: 210px;
@@ -54,6 +55,6 @@ body {
     transition: 0.2s;
 }
 
-#dice:hover {
-    background-color: hsl(193, 38%, 86%);
+#generate-button:hover {
+    filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
 }
