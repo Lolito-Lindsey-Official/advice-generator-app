@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .attribution a { 
@@ -18,7 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .advice-card {
@@ -56,5 +61,5 @@ body {
 }
 
 #generate-button:hover {
-    filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+    filter: drop-shadow(0 0 1rem hsl(150, 100%, 66%));
 }
