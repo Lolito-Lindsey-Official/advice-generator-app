@@ -20,11 +20,11 @@ const updateTitledContent = (fetchedObj) => {
     // Destructures the object into smaller parts
     const {id, advice} = fetchedObj;
 
-    adviceNumberId.textContent = `Advice ${id}`;
+    adviceNumberId.textContent = `Advice #${id}`;
     adviceDisplayContent.textContent = advice;
 }
 
-// Takes the fetched data (siip) and passes it to the updateTitledContent function
+// Takes the fetched data (siip) and calls the updateTitledContent function
 const generateNewAdvice = async () => {
     const genData = await fetchUserAdvice();
     const adviceOut = genData.slip;
