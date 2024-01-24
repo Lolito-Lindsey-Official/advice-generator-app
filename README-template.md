@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Lolito-Lindsey-Official/advice-generator-app)
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [https://github.com/Lolito-Lindsey-Official/advice-generator-app]
+- Live Site URL: [Add live site URL here]
 
 ## My process
 
