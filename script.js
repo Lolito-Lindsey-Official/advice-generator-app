@@ -16,7 +16,7 @@ const fetchUserAdvice = async () => {
 }
 
 // Updates the advice title and content to the browser (render)
-const updateTitledContent = (fetchedObj) => {
+const updateIdAndContent = (fetchedObj) => {
     // Destructures the object into smaller parts
     const {id, advice} = fetchedObj;
 
@@ -25,15 +25,16 @@ const updateTitledContent = (fetchedObj) => {
 }
 
 // Takes the fetched data (siip) and calls the updateTitledContent function
+// Fetches a new slip object by calling back to the fetchUserAdvice function
 const generateNewAdvice = async () => {
     const genData = await fetchUserAdvice();
-    const adviceOut = genData.slip;
+    const adviceOutput = genData.slip;
 
-    updateTitledContent(adviceOut);
+    updateIdAndContent(adviceOutput);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    // When the generate button is clicked, it will generate new advice
+    // When the generate button is clicked, it will call on the generateNewAdvice function
     fetchAdviceButton.addEventListener('click', generateNewAdvice);
     // Fetches advice upon the page loading
     generateNewAdvice();
