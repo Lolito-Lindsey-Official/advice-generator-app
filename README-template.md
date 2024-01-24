@@ -6,7 +6,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,8 +14,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,22 +25,10 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Generate a new piece of advice by clicking the dice icon
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Lolito-Lindsey-Official/advice-generator-app)
+- Live Site URL: [Add live site URL here]()
 
 ## My process
 
@@ -52,38 +37,33 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Flexbox
-- JavaScript DOM manipulation and asynchronus functions
+- JavaScript DOM manipulation, asynchronus functions, and deconstruction
 - Advice Slip JSON API
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This was a valuable project to me since it served as a way to reinforce some essential JavaScript concepts. I felt that I was rusty with asynchronus functions and deconstruction, so this felt like a way to do some trial and error with them. 
 
-To see how you can add code snippets, see below:
+Since this was my first time tinkering with an API (I think of them as digital libraires that one can fetch data from), this code snippet is where I did the most learning. I would further say that learning how to use async and await made all the difference when I realized they act as stop gaps to ensure the flow of the program.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+// fetches data from the Advice Slip JSON API
+// Uses an async function to fetch data while other tasks are being completed
+const fetchUserAdvice = async () => {
+     // Awaits fetched data from the API
+    const recieveResponse = await fetch(apiLink);
+    // Awaits a loaded JSON file containing the slip object data and logs it
+    const adviceOut = await recieveResponse.json();
+    // Returns the fetched data
+    return adviceOut;
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+To keep it succinct, I will continue to grow my understanding of the JavaScript concepts used in this project with future ones. Also, using the Advisor Slip JSON API has made me curious about what I do with other APIs and what I can make with them.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Any feedback is appreiciated since software is never in its final draft.
 
 ### Useful resources
 
@@ -92,9 +72,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Lolito-Lindsey-Official](https://www.frontendmentor.io/profile/Lolito-Lindsey-Official)
 
 ## Acknowledgments
 
